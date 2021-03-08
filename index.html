@@ -24,24 +24,22 @@
     <!-- For the header -->
     <header>
       <!-- For the navigation -->
-      <div>
+
+ <div class="navbar">
         <a href="index.html">
-          <img src="img/ANDLogo_final.png" alt="Anne Duquennois">
+          <img id="logo" src="img/ANDLogo_final.png" alt="Anne Duquennois">
         </a>
-        <nav>
           <ul>
             <li><a href="index.html">Work</a></li>
             <li><a href="about.html" target="_self">About</a></li>
             <li><a href="about.html#skills">My Skills</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="files/Duquennois-resume-2021.pdf" target="_blank">Download my CV</a></li>
+            <li><a href="files/Duquennois-resume-2021.pdf" class="button contact" target="_blank">Download my CV</a></li>
           </ul>
-        </nav>
-      </div>
-    </header>
-
+        </div>
+</header>
     <!-- For the hero section -->
-    <div>
+    <div id="hero">
       <div>
         <h1>
           Hello! My name is Anne Duquennois</h1>
@@ -55,11 +53,11 @@
     </div>
 
     <!-- For your work/projects -->
-    <div>
+    <div id="home-projects">
       <div>
         <h2>work/projects</h2>
         <!-- begin 1rst project -->
-        <div>
+        <div class="project1">
           <!--row for column-->
           <div>
             <!-- 2x coulmns -->
@@ -79,9 +77,10 @@
           </div><!-- end second column -->
 
         </div><!-- end row with two columns -->
+        
         <!-- begin 2nd project -->
 
-        <div>
+        <div class="project2">
           <!--row for column-->
           <div>
             <!-- 2x coulmns -->
@@ -97,7 +96,7 @@
               This short video was produced to feature at the University of Colorado, Colorado Springs’(UCCS) top donor society dinner. My role was director, producer and editor of the video.
             </p>
             <p>For this project I used sketch and invision to work from design to development</p>
-            <a href="">Read More</a>
+            <a href="" class="button">Read More</a>
           </div><!-- end second column -->
 
         </div><!-- end row with two columns -->
@@ -116,11 +115,12 @@
         </div>
         <div>
           <!--Social Media Layout and Placeholders-->
-          <a href="LINKEDIN-URL" target="_blank">
+          <a href="LINKEDIN-URL" id="social-icon" target="_blank">
             <img src="via.placeholder.com/32x32">
           </a>
+          <div id="social-icon">
           <a href="TWITTER-URL" target="_blank">
-            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455.731 455.731" style="enable-background:new 0 0 455.731 455.731;" xml:space="preserve">
+            <svg version="1.1" id="social-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455.731 455.731" style="enable-background:new 0 0 455.731 455.731;" xml:space="preserve">
         <g>
             <rect x="0" y="0" style="fill:#50ABF1;" width="455.731" height="455.731" />
             <path style="fill:#FFFFFF;" d="M60.377,337.822c30.33,19.236,66.308,30.368,104.875,30.368c108.349,0,196.18-87.841,196.18-196.18
@@ -133,6 +133,7 @@
         </g>
 </svg>
           </a>
+          </div>
           <a href="ANOTHER-SOCIAL-LINK">
             <img src="via.placeholder.com/32x32">
           </a>
@@ -140,7 +141,7 @@
             <img src="via.placeholder.com/32x32">
           </a>
         </div>
-        <p>Copyright YOUR-NAME 2020</p>
+        <p>Copyright Anne Duquennois 2021</p>
       </div>
     </footer>
 </main>
