@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
 
   background-color: #ffffff;
@@ -8,15 +12,18 @@ body {
   color: #4a4a4a;
 }
 
-/*.navBlock {
-  display: inline-block;
-  width: 1005;
-  position: fixed;
-  text-align: left;
-  background-color: #00cea2;
-  height: 20px;
-}*/
+header {
+  background-color: #D8D8D8;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+  border-bottom: 2px solid #4a4a4a;
+}
 
+
+/*
 .navbar {
   display: inline-block;
   width: 1005;
@@ -24,7 +31,7 @@ body {
   text-align: left;
   background-color: #D8D8D8;
 }
-
+*/
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
@@ -113,4 +120,17 @@ a:active { /* selected link */
 .button.contact:hover {
   background-color: #00acc0;
   color: #ffffff;
+}
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+  max-width: 1200px;
+}
+
+#work .row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  padding-bottom: 25px;
+  border-bottom: 2px solid #4a4a4a;
 }
