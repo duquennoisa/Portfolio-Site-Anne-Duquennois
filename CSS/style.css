@@ -14,14 +14,21 @@ body {
 
 header {
   background-color: #D8D8D8;
+  width: 100%;
   padding-top: 10px;
   padding-right: 5px;
   padding-bottom: 15px;
   padding-left: 5px;
-  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+  margin: auto auto; /* No spacing to top and bottom and auto spacing to left and right */
   border-bottom: 2px solid #4a4a4a;
+  text-align: center;
+  box-shadow:         1px 11px 10px 0px rgba(50, 50, 50, 0.56);
+  position: fixed;
 }
 
+main{
+  padding-top: 175px;
+}
 
 /*
 .navbar {
@@ -59,7 +66,7 @@ h4 {
 
 /* custom logo sizing */
 #logo {
-  width: 150px;
+  width: 100px;
   height: auto;
 }
 
@@ -122,6 +129,19 @@ a:active { /* selected link */
   color: #ffffff;
 }
 
+.button.nav {
+  background-color: transparent;
+  color: #00acc0;
+  font-weight: 700;
+  padding: 0 15px;
+  text-transform: uppercase;
+  border: 2px solid #00acc0;
+}
+
+.button.nav:hover {
+  background-color: #00acc0;
+  color: #ffffff;
+}
 /* Layout styling */
 
 .container {
@@ -134,3 +154,57 @@ a:active { /* selected link */
   padding-bottom: 25px;
   border-bottom: 2px solid #4a4a4a;
 }
+
+/* nav bar styling */
+nav { 
+  display: inline-block;
+  width: 100%;
+ }
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+nav > ul > li > a:hover {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #00acc0;
+}
+
+
+/* Hero section  */
+#hero {
+  background-color: #ffe4c4;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero h1 {
+  margin: 0;
+  padding: 0.67em 0;
+  text-align: center; /* Centers text */
+}
+
+
+.social{
+  text-align: center;
+  display: inline-block;
+
+}
+/*.center {
+  text-align: center;
+}*/
+
+
