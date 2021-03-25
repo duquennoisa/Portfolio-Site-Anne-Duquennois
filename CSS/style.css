@@ -80,6 +80,8 @@ h4 {
 /* resize images */
 img {
   width: 100%;
+  max-width: 100%;
+  height: auto;
   padding: 25px;
 }
 
@@ -139,6 +141,7 @@ a:active { /* selected link */
   padding: 0 15px;
   text-transform: uppercase;
   border: 2px solid #00acc0;
+  transition: 0.2s opacity;
 }
 
 .button.nav:hover {
@@ -208,6 +211,7 @@ nav > ul > li > a:hover {
 }
 
 /* column organization */
+
 [class*="col-"] {
   float: left;
   padding: 10px;
@@ -229,13 +233,13 @@ Medium devices (640px and larger)
 
   header {
   text-align: unset;
-  padding: 20px 0 13px;
+  padding: 13px 0 13px;
   }
 
   nav { 
   width: auto;
   float: right;
-  margin-top: 4px;
+  margin-top: 0px;
   font-size: 1em;
   padding: 10px;
   }
@@ -250,12 +254,53 @@ Medium devices (640px and larger)
   width: 50%;
   }
 
+  #logo {
+  width: 5em;
+  height: auto;
+  padding: 15px ;
+  }
+
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+   header {
+  text-align: unset;
+  padding: 20px 0 13px;
+  }
+
+  nav { 
+  width: auto;
+  float: right;
+  margin-top: 4px;
+  font-size: 1em;
+  padding: 15px;
+  }
+  main {
+  padding: 100px 0;
+  }
+
+  #hero span {
+  display: block;
+  }
+  .col-lg-6 {
+  width: 50%;
+  }
+  .col-lg-7 {
+  width: 58.33%%;
+  }
+  .col-lg-5 {
+  width: 41.66%;
+  }
+
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;}
+
+
 }
 /* ==============================
 X-large devices (1440px or larger)
@@ -268,3 +313,52 @@ Extra-large devices (1920px or larger)
 ================================= */
 @media only screen and (min-width: 1920px) {
 }
+
+/* ------------------((((((((((((()))))))))))))
+ANIMATIOAN 
+---------------((((((((((((())))))))))))) */
+
+/* ++++++++ CLOUDS ++++++++ */
+
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+/* ++++++++ SUN ++++++++ */
+
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+
+}
+
