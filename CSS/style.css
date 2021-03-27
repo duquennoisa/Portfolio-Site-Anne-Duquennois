@@ -27,9 +27,20 @@ header {
 }
 
 main{
+  width: 100%;
   padding-top: 175px;
+  padding-bottom: 0px;
 }
 
+footer{
+  background-color: #D8D8D8;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 15px;
+
+}
 /*
 .navbar {
   display: inline-block;
@@ -151,6 +162,7 @@ a:active { /* selected link */
 /* Layout styling */
 
 .container {
+  width:100%;
   padding: 0 15px;
   max-width: 1200px;
 }
