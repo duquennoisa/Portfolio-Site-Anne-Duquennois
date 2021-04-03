@@ -9,3 +9,13 @@ var size = 100;
 var maxSize = (size * 4) + 15;
 var minSize = (size / 3) - 15 + (size * 2);
 console.log(maxSize);
+
+var myObject = {
+  name: name,
+  age: age,
+  hobbies: "hiking, traveling, eating",
+};
+
+
+console.log(myObject);
+console.log(myObject.hobbies);
