@@ -21,7 +21,7 @@ header {
   padding-left: 5px;
   margin: auto auto; /* No spacing to top and bottom and auto spacing to left and right */
   border-bottom: 2px solid #4a4a4a;
-  text-align: center;
+  /* text-align: center;*/
   box-shadow:         1px 11px 10px 0px rgba(50, 50, 50, 0.56);
   position: fixed;
 }
@@ -174,18 +174,19 @@ a:active { /* selected link */
 }
 
 /* nav bar styling */
-nav { 
+/*nav {
   display: inline-block;
   width: 80%;
- }
+ }*/
 
 nav > ul {
   list-style-type: none;
   padding: 0;
 }
-nav > ul > li {
+/*  nav > ul > li {
   display: inline-block;
-}
+}   // put this isn the media query */
+
 nav > ul > li > a {
   padding: 0 9px;
   text-transform: uppercase;
@@ -200,6 +201,12 @@ nav > ul > li > a:hover {
   color: #00acc0;
 }
 
+.navtoggle li .icon {
+  padding-right: 5;
+  right: 0;
+  top: 2px;
+  font-size: 25px;
+}
 
 /* Hero section  */
 #hero {
@@ -241,29 +248,43 @@ nav > ul > li > a:hover {
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (max-width: 640px) {
 
   header {
   text-align: unset;
-  padding: 13px 0 13px;
+  padding: 0;
   }
 
-  nav { 
+  nav {
   width: auto;
   float: right;
   margin-top: 0px;
   font-size: 1em;
   padding: 10px;
   }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
+  .navtoggle li:last-child {
+    display: inline-block;
+  }
+  .navtoggle, .navtoggle.responsive {
+  position: relative;
+}
   main {
   padding: 100px 0;
   }
 
   #hero span {
   display: block;
-  }
-  .col-md-6 {
-  width: 50%;
   }
 
   #logo {
@@ -273,23 +294,50 @@ Medium devices (640px and larger)
   }
 
 }
+/* ==============================
+All devices but phones
+================================= */
+@media only screen and (min-width: 641px) {
 
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+
+}
+nav {
+width: auto;
+float: right;}
+
+.col-md-6 {
+width: 50%;
+}
+
+}
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
+
 @media only screen and (min-width: 1024px) {
    header {
   text-align: unset;
   padding: 20px 0 13px;
   }
 
-  nav { 
+  nav {
   width: auto;
   float: right;
   margin-top: 4px;
   font-size: 1em;
   padding: 15px;
   }
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
   main {
   padding: 100px 0;
   }
@@ -327,7 +375,7 @@ Extra-large devices (1920px or larger)
 }
 
 /* ------------------((((((((((((()))))))))))))
-ANIMATIOAN 
+ANIMATIOAN
 ---------------((((((((((((())))))))))))) */
 
 /* ++++++++ CLOUDS ++++++++ */
@@ -373,4 +421,3 @@ ANIMATIOAN
   100% {fill: #f76414;}
 
 }
-
