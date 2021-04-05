@@ -28,7 +28,7 @@ header {
 
 main{
   width: 100%;
-  padding-top: 175px;
+  padding-top: 100px;
   padding-bottom: 0px;
 }
 
@@ -118,7 +118,8 @@ a:active { /* selected link */
 }
 
 
-/* stylizing buttons */
+/* -------------stylizing buttons------------ */
+
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #00acc0;
@@ -159,7 +160,7 @@ a:active { /* selected link */
   background-color: #00acc0;
   color: #ffffff;
 }
-/* Layout styling */
+/* --------------Layout styling-------------- */
 
 .container {
   width:100%;
@@ -173,7 +174,7 @@ a:active { /* selected link */
   border-bottom: 2px solid #4a4a4a;
 }
 
-/* nav bar styling */
+/* ------------------nav bar styling------------------ */
 /*nav {
   display: inline-block;
   width: 80%;
@@ -208,7 +209,11 @@ nav > ul > li > a:hover {
   font-size: 25px;
 }
 
-/* Hero section  */
+.navtoggle.responsive li  {
+  display: block;
+}  /* this add the hamburger nav from js*/
+
+/* ------------ Hero section----------------  */
 #hero {
   background-color: #ffe4c4;
   padding: 20px 0;
@@ -279,6 +284,23 @@ Medium devices (640px and larger)
   .navtoggle, .navtoggle.responsive {
   position: relative;
 }
+
+.navtoggle.responsive li:not(:last-child){
+display: inline-block;
+}
+/* toggled menu styling */
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
   main {
   padding: 100px 0;
   }
@@ -313,7 +335,9 @@ float: right;}
 .col-md-6 {
 width: 50%;
 }
-
+nav > ul {
+  margin: 1em 0;
+}
 }
 /* ==============================
 Large devices (1024px or larger)
@@ -328,9 +352,9 @@ Large devices (1024px or larger)
   nav {
   width: auto;
   float: right;
-  margin-top: 4px;
+  /*margin-top: 3px;*/
   font-size: 1em;
-  padding: 15px;
+  padding: 8px;
   }
   .navtoggle li:not(:last-child) {
   display: inline-block;

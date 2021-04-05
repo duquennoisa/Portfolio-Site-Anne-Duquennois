@@ -23,6 +23,7 @@
 
 <!-- For the header -->
 <header>
+    <div class="navtoggle" id="myNavtoggle">  <!-- For mobile toggle-->
   <!-- For the navigation -->
   <a href="index.html">
     <img id="logo" src="img/ANDLogo_final.png" alt="Anne Duquennois">
@@ -32,10 +33,12 @@
       <li><a href="index.html">Work</a></li>
       <li><a href="about.html" target="_self">About</a></li>
       <li><a href="about.html#skills">My Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
       <li><a href="files/Duquennois-resume-2021.pdf" class="button nav" target="_blank">Download my CV</a></li>
+      <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
     </ul>
   </nav>
+</div>
 </header>
 <main>
   <!-- this is for the project content -->
@@ -173,5 +176,10 @@
     </div>
   </footer>
 </main>
-
+<script src="https://kit.fontawesome.com/c61918bfa6.js" crossorigin="anonymous"></script>
+  <script
+          src="https://code.jquery.com/jquery-3.6.0.min.js"
+          integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+          crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 </html>
