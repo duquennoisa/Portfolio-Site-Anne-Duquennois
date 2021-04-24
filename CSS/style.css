@@ -3,12 +3,14 @@
 }
 
 body {
-
   background-color: #ffffff;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.2em; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6em; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 1.2em;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6em;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
 }
 
@@ -19,28 +21,29 @@ header {
   padding-right: 5px;
   padding-bottom: 15px;
   padding-left: 5px;
-  margin: auto auto; /* No spacing to top and bottom and auto spacing to left and right */
+  margin: auto auto;
+  /* No spacing to top and bottom and auto spacing to left and right */
   border-bottom: 2px solid #4a4a4a;
   /* text-align: center;*/
-  box-shadow:         1px 11px 10px 0px rgba(50, 50, 50, 0.56);
+  box-shadow: 1px 11px 10px 0px rgba(50, 50, 50, 0.56);
   position: fixed;
 }
 
-main{
+main {
   width: 100%;
   padding-top: 100px;
   padding-bottom: 0px;
 }
 
-footer{
+footer {
   background-color: #D8D8D8;
   width: 100%;
   text-align: center;
   padding-top: 10px;
   padding-right: 5px;
   padding-bottom: 15px;
-
 }
+
 /*
 .navbar {
   display: inline-block;
@@ -53,6 +56,7 @@ footer{
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 2.75em;
   font-weight: 900;
@@ -69,8 +73,8 @@ h3 {
   font-size: 1.75em;
   font-weight: 400;
   text-decoration: underline;
-
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
@@ -80,10 +84,10 @@ h4 {
 #logo {
   width: 5em;
   height: auto;
-  padding: 2px ;
+  padding: 2px;
 }
 
-#social-icons{
+#social-icons {
   width: 32px;
   height: auto;
 }
@@ -99,12 +103,14 @@ img {
 /*link stylizing*/
 a {
   color: #00acc0;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
 
 a:hover {
   color: #00daf3;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
 }
 
 a:focus {
@@ -112,26 +118,29 @@ a:focus {
   text-decoration: underline;
 }
 
-}
-a:active { /* selected link */
+a:active {
+  /* selected link */
   color: #994c30;
 }
 
-
 /* -------------stylizing buttons------------ */
-
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #00acc0;
-  color: #ffffff; /* needed to override the default link color */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #008392;
+  color: #ffffff;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #00daf3; /* width of the border, type, color */
+  border-bottom: 2px solid #00daf3;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
+
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
 
@@ -141,6 +150,7 @@ a:active { /* selected link */
   text-transform: uppercase;
   border: 2px solid #00acc0;
 }
+
 .button.contact:hover {
   background-color: #00acc0;
   color: #ffffff;
@@ -160,16 +170,17 @@ a:active { /* selected link */
   background-color: #00acc0;
   color: #ffffff;
 }
-/* --------------Layout styling-------------- */
 
+/* --------------Layout styling-------------- */
 .container {
-  width:100%;
+  width: 100%;
   padding: 0 15px;
   max-width: 1200px;
 }
 
 #work .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
   padding-bottom: 25px;
   border-bottom: 2px solid #4a4a4a;
 }
@@ -179,23 +190,22 @@ a:active { /* selected link */
   display: inline-block;
   width: 80%;
  }*/
-
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
+
 /*  nav > ul > li {
   display: inline-block;
 }   // put this isn the media query */
-
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 9px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
 }
 
-nav > ul > li > a:hover {
+nav>ul>li>a:hover {
   padding: 0 9px;
   text-transform: uppercase;
   font-weight: 700;
@@ -203,16 +213,17 @@ nav > ul > li > a:hover {
 }
 
 .navtoggle li .icon {
-  padding-right: 5;
+  padding-right: 5px;
   right: 0;
   top: 2px;
   font-size: 25px;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
-}  /* this add the hamburger nav from js*/
+}
 
+/* this add the hamburger nav from js*/
 /* ------------ Hero section----------------  */
 #hero {
   background-color: #ffe4c4;
@@ -224,22 +235,21 @@ nav > ul > li > a:hover {
 #hero h1 {
   margin: 0;
   padding: 0.67em 0;
-  text-align: center; /* Centers text */
+  text-align: center;
+  /* Centers text */
 }
 
-
-.social{
+.social {
   text-align: center;
   display: inline-block;
-
 }
 
 /* column organization */
-
 [class*="col-"] {
   float: left;
   padding: 10px;
 }
+
 .row::after {
   content: "";
   clear: both;
@@ -249,162 +259,167 @@ nav > ul > li > a:hover {
 /*.center {
   text-align: center;
 }*/
-
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (max-width: 640px) {
-
   header {
-  text-align: unset;
-  padding: 0;
+    text-align: unset;
   }
 
   nav {
-  width: auto;
-  float: right;
-  margin-top: 0px;
-  font-size: 1em;
-  padding: 10px;
+    width: auto;
+    float: right;
+    margin-top: 0px;
+    font-size: 1em;
+    padding: 10px;
   }
 
-  nav > ul {
+  nav>ul {
     margin: 1em 0;
   }
 
-  nav > ul > li {
+  nav>ul>li {
     display: inline-block;
   }
+
   .navtoggle li:not(:last-child) {
     display: none;
   }
+
   .navtoggle li:last-child {
     display: inline-block;
   }
+
   .navtoggle, .navtoggle.responsive {
-  position: relative;
-}
+    position: relative;
+  }
 
-.navtoggle.responsive li:not(:last-child){
-display: inline-block;
-}
-/* toggled menu styling */
-.navtoggle.responsive nav {
-  padding: 24px 0 0;
-}
-.navtoggle.responsive li  {
-  display: block;
-  padding: 10px 0;
-}
+  .navtoggle.responsive li:not(:last-child) {
+    display: inline-block;
+  }
 
-.navtoggle.responsive li:last-child  {
-  padding: 0 0 10px;
-}
+  /* toggled menu styling */
+  .navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
+
+  .navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
+  }
 
   main {
-  padding: 100px 0;
+    padding: 100px 0;
   }
 
   #hero span {
-  display: block;
+    display: block;
   }
 
   #logo {
-  width: 5em;
-  height: auto;
-  padding: 15px ;
+    width: 5em;
+    height: auto;
+    padding: 15px;
   }
-
 }
+
 /* ==============================
 All devices but phones
 ================================= */
 @media only screen and (min-width: 641px) {
-
   .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-.navtoggle li:last-child {
-  display: none;
+    display: inline-block;
+  }
 
-}
-nav {
-width: auto;
-float: right;}
-
-.col-md-6 {
-width: 50%;
-}
-nav > ul {
-  margin: 1em 0;
-}
-}
-/* ==============================
-Large devices (1024px or larger)
-================================= */
-
-@media only screen and (min-width: 1024px) {
-   header {
-  text-align: unset;
-  padding: 20px 0 13px;
+  .navtoggle li:last-child {
+    display: none;
   }
 
   nav {
-  width: auto;
-  float: right;
-  /*margin-top: 3px;*/
-  font-size: 1em;
-  padding: 8px;
+    width: auto;
+    float: right;
   }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  nav>ul {
+    margin: 1em 0;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    /*margin-top: 3px;*/
+    font-size: 1em;
+    padding: 8px;
+  }
+
   .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-.navtoggle li:last-child {
-  display: none;
-}
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
   main {
-  padding: 100px 0;
+    /*  padding: 100px 0;*/
   }
 
   #hero span {
-  display: block;
+    display: block;
   }
+
   .col-lg-6 {
-  width: 50%;
+    width: 50%;
   }
+
   .col-lg-7 {
-  width: 58.33%%;
+    width: 58.33%%;
   }
+
   .col-lg-5 {
-  width: 41.66%;
+    width: 41.66%;
   }
 
   .container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;}
-
-
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
+@media only screen and (min-width: 1440px) {}
 
 /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
-@media only screen and (min-width: 1920px) {
-}
+@media only screen and (min-width: 1920px) {}
 
 /* ------------------((((((((((((()))))))))))))
 ANIMATIOAN
 ---------------((((((((((((())))))))))))) */
-
 /* ++++++++ CLOUDS ++++++++ */
-
-
 .cloud-front {
   animation-duration: 30s;
   animation-name: cloud-move;
@@ -414,8 +429,13 @@ ANIMATIOAN
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .cloud-back {
@@ -423,13 +443,16 @@ ANIMATIOAN
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 /* ++++++++ SUN ++++++++ */
-
-
 .sun {
   animation-duration: 4s;
   animation-name: color-change;
@@ -438,10 +461,16 @@ ANIMATIOAN
   animation-timing-function: linear;
 }
 
-
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
 
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
