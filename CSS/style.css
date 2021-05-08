@@ -140,6 +140,7 @@ a:active {
 
 .button:hover {
   opacity: 0.8;
+  color: #ffffff;
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
